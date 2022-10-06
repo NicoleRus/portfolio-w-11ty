@@ -8,3 +8,11 @@
  - include contact info
  - have space for projects
  - display solid understanding of tailwind css
+
+## Next Steps
+ - create home page
+  - add navigation
+    - home page
+    - about me page
+    - contact page
+    - work page

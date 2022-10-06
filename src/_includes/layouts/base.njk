@@ -7,8 +7,10 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  <h1>{{ title }}</h1>
-
-  {{ content | safe }}
+  {% include "nav.njk" %}
+  <main>
+    <h1 class="text-3xl text-green-800 font-bold">{{ title }}</h1>
+    {{ content | safe }}
+  </main>
 </body>
 </html>
