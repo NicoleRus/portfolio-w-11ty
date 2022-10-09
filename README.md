@@ -11,7 +11,7 @@
 
 ## Next Steps
  - create home page
-  - add navigation
+  - add navigation [x]
     - home page
     - about me page
     - contact page

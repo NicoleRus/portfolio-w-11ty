@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/tailwind.css" />
   <title>Homepage</title>
 </head>
 <body>
   <header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <a href="/projects">Projects</a>
+  <nav class="flex gap-4 m-4">
+    <a class="no-underline p-1 rounded-md hover:text-cyan-400 hover:bg-transparent active:text-cyan-600 active:bg-transparent" href="/">{ NB }</a>
+    <ul class="flex row ml-auto gap-2">
+      <li class="list-none"><a class="no-underline p-1 rounded-md" href="#about">about</a></li>
+      <li class="list-none"><a class="no-underline p-1 rounded-md" href="#skills">skills</a></li>
+      <li class="list-none"><a class="no-underline p-1 rounded-md" href="#contact">contact</a></li>
+      <li class="list-none"><a class="no-underline p-1 rounded-md" href="/projects">projects</a></li>
+    </ul>
   </nav>
 </header>
   <main>
     <h1 class="text-3xl text-green-800 font-bold">Homepage</h1>
-    
-<h1>Hello World!</h1>
+    <p>Home</p>
+
   </main>
 </body>
 </html>

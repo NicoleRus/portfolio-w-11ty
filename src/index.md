@@ -3,4 +3,4 @@ title: Homepage
 layout: layouts/base.njk
 ---
 
-<h1>Hello World!</h1>
+Home
