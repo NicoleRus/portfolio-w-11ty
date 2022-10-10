@@ -532,6 +532,11 @@ video {
   border-radius: 0.375rem;
 }
 
+.bg-cyan-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 250 254 / var(--tw-bg-opacity));
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -550,6 +555,10 @@ video {
   color: rgb(22 101 52 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -562,6 +571,7 @@ a:hover {
 
 button:focus-visible, 
 a:focus-visible {
+  outline-style: dashed;
   outline-color: #fda4af;
 }
 
@@ -573,7 +583,7 @@ a:focus-visible:hover {
 button:active, 
 a:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
 }
 
 button:focus-visible:active, 
@@ -581,20 +591,21 @@ a:focus-visible:active {
   outline-color: #64748b;
 }
 
-.hover\:bg-transparent:hover {
+.logo svg {
+  height: 24px;
+  width: auto;
+}
+
+.logo:hover svg path {
+  fill: #67e8f9;
+}
+
+.logo:active svg path {
+  fill: #06b6d4;
+}
+
+.logo:hover, 
+.logo:active, 
+.logo:focus-visible {
   background-color: transparent;
-}
-
-.hover\:text-cyan-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(34 211 238 / var(--tw-text-opacity));
-}
-
-.active\:bg-transparent:active {
-  background-color: transparent;
-}
-
-.active\:text-cyan-600:active {
-  --tw-text-opacity: 1;
-  color: rgb(8 145 178 / var(--tw-text-opacity));
 }

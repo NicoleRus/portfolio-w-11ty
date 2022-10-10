@@ -4,5 +4,24 @@
 
 button,
 a {
-  @apply hover:bg-cyan-100 active:bg-cyan-300 focus-visible:outline-rose-300 hover:focus-visible:outline-slate-400 active:focus-visible:outline-slate-500;
+  @apply hover:bg-cyan-100 active:bg-cyan-200 focus-visible:outline-rose-300 focus-visible:outline-dashed hover:focus-visible:outline-slate-400 active:focus-visible:outline-slate-500;
+}
+
+.logo svg {
+  height: 24px;
+  width: auto;
+}
+
+.logo:hover svg path{
+  @apply fill-cyan-300;
+}
+
+.logo:active svg path{
+  @apply fill-cyan-500;
+}
+
+.logo:hover,
+.logo:active,
+.logo:focus-visible {
+  @apply bg-transparent;
 }

@@ -1,11 +1,12 @@
 <header>
   <nav class="flex gap-4 m-4">
-    <a class="no-underline p-1 rounded-md hover:text-cyan-400 hover:bg-transparent active:text-cyan-600 active:bg-transparent" href="/">{ NB }</a>
+    <a class="no-underline p-1 rounded-md logo" href="/">{% include "../assets/_logo.svg" %}</a>
     <ul class="flex row ml-auto gap-2">
-      <li class="list-none"><a class="no-underline p-1 rounded-md" href="#about">about</a></li>
-      <li class="list-none"><a class="no-underline p-1 rounded-md" href="#skills">skills</a></li>
-      <li class="list-none"><a class="no-underline p-1 rounded-md" href="#contact">contact</a></li>
-      <li class="list-none"><a class="no-underline p-1 rounded-md" href="/projects">projects</a></li>
+      <li class="list-none flex"><a {% if page.url == "/#about" %} class="underline"{% endif %} class="no-underline p-1 rounded-md" href="#about">about</a></li>
+      <li class="list-none flex"><a {% if page.slug == "/#skills" %} class="underline"{% endif %} class="no-underline p-1 rounded-md" href="#skills">skills</a></li>
+      <li class="list-none flex"><a {% if page.url == "/#contact" %} class="underline"{% endif %} class="no-underline p-1 rounded-md" href="#contact">contact</a></li>
+      <li class="list-none flex"><a {% if page.url == "/projects" %} class="underline"{% endif %} class="no-underline p-1 rounded-md" href="/projects">projects</a></li>
     </ul>
+    <span>{{ page.slug }}</span>
   </nav>
 </header>
