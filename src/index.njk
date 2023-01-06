@@ -1,10 +1,9 @@
 ---
 title: Homepage
 layout: layouts/base.njk
+templateEngineOverride: njk,md
 ---
-<div id="about" style="block-size: 300px;" class="flex">
-  <span>About Me</span>
-</div>
+{% include "home_sections/about.html" %}
 <div id="skills">
   <span>Skills</span>
 </div>

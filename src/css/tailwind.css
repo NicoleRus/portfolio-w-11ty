@@ -25,3 +25,11 @@ a {
 .logo:focus-visible {
   @apply bg-transparent;
 }
+
+::placeholder {
+  text-align: center;
+}
+
+.calc-nav {
+  block-size: calc(100vh - 64px);
+}

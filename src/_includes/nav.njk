@@ -2,10 +2,10 @@
   <nav class="flex gap-4 m-4">
     <a class="no-underline p-1 rounded-md logo" href="/">{% include "../assets/_logo.svg" %}</a>
     <ul class="flex row ml-auto gap-2">
-      <li class="list-none flex"><a class="no-underline p-1 rounded-md" href="#about">about</a></li>
-      <li class="list-none flex"><a class="no-underline p-1 rounded-md" href="#skills">skills</a></li>
-      <li class="list-none flex"><a class="no-underline p-1 rounded-md" href="#contact">contact</a></li>
-      <li class="list-none flex"><a class="no-underline p-1 rounded-md" href="/projects">projects</a></li>
+      <li class="list-none flex"><a {% if page.url == "" %} aria-current="page" {% endif %} class="no-underline p-1 rounded-md" href="#about">about</a></li>
+      <li class="list-none flex"><a {% if page.url == "" %} aria-current="page" {% endif %} class="no-underline p-1 rounded-md" href="#skills">skills</a></li>
+      <li class="list-none flex"><a {% if page.url == "" %} aria-current="page" {% endif %} class="no-underline p-1 rounded-md" href="#contact">contact</a></li>
+      <li class="list-none flex"><a {% if page.url == "/projects" %} class="underline"{% endif %} class="no-underline p-1 rounded-md" href="/projects">projects</a></li>
     </ul>
   </nav>
 </header>
